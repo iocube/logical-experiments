@@ -1,7 +1,16 @@
 #!/bin/bash
 
 star_symbol='*'
-total_lines='9'  # total amount of printed lines ( greater than 0 )
+total_lines='9'  # total amount of printed lines (must be an odd number greater than 0)
+case $1 in
+	[0-9]*)
+		total_lines="$1"
+		;;
+	*\|""*)
+		echo "Invalid input. Assuming default total_lines=${total_lines}"
+		;;
+esac
+
 counter="$total_lines"  # internal counter
 
 function repeat_letter {
