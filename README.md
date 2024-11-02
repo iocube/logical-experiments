@@ -60,5 +60,4 @@ silver@silverxp:~/Projects/logical-experiments$ ./char_rhombus.sh 21
         *****
          ***
           *
-silver@silverxp:~/Projects/logical-experiments$ 
 ```
